@@ -60,6 +60,12 @@ app.get('/about', (req,res) => {
   });
 });
 
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs', {
+    pageTitle: 'My project portoflio'
+  })
+});
+
 // /bad res.send json data with errorMessage
 app.get('/bad',(req, res) => {
   res.send({
